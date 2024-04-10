@@ -102,7 +102,6 @@ public class Convertir extends javax.swing.JFrame {
     }//GEN-LAST:event_jtGradosCelsiusActionPerformed
 
     private void jbConvertirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbConvertirActionPerformed
-
         Pattern p = Pattern.compile("^[-+]?[0-9]*\\.?[0-9]+([-+]?[0-9]+)?$");
         Matcher m = p.matcher(jtGradosCelsius.getText());
 
@@ -124,7 +123,6 @@ public class Convertir extends javax.swing.JFrame {
     }//GEN-LAST:event_jbConvertirActionPerformed
 
     private void jtGradosCelsiusFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jtGradosCelsiusFocusLost
-        // TODO add your handling code here:
 
 
     }//GEN-LAST:event_jtGradosCelsiusFocusLost
