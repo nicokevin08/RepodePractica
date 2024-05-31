@@ -83,7 +83,7 @@ body {
   width: 100%;
 }
 
-.form_input-cotainer :is(input, textarea) {
+.form_input-cotainer :is(input, textarea, button) {
   width: 100%;
   padding: 8px;
   font-size: 16px;
@@ -98,8 +98,24 @@ body {
   min-height: 180px;
   font-family: inherit;
 }
-.form_input-cotainer input[type="submit"] {
+.form_input-cotainer input[type="submit"],
+button[type="reset"] {
   padding: 12px;
   background-color: #4e2b2b;
   color: #fff;
+}
+
+.bajo_form {
+  box-shadow: 0 0 9px #fff;
+  width: 50%;
+  height: 35vh;
+  color: #fff;
+  background-color: #240505;
+}
+
+.bajo_form ul {
+  position: relative;
+  top: 10px;
+  left: 5vh;
+  width: 90vh;
 }

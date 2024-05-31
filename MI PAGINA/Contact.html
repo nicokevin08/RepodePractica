@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script defer src="document.js"></script>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Cadelago Nicolás" />
@@ -16,7 +16,7 @@
       <div class="nav_contenedor">
         <ul class="nav_ul">
           <li class="nav_ul-item">
-            <a class="nav_ul-link" href="Home.html">Home</a>
+            <a class="nav_ul-link" href="index.html">Home</a>
           </li>
           <li class="nav_ul-item">
             <a class="nav_ul-link" href="Galery.html">Galery</a>
@@ -29,37 +29,54 @@
     </nav>
     <section class="form">
       <h2 class="h2_form">Formulario</h2>
-      <form class="form_form">
+      <form class="form_form" onsubmit="return validar()">
         <div class="form_input-cotainer">
           <label
             >Nombre
-            <input type="text" placeholder="Federico" />
+            <input id="txtNombre" type="text" placeholder="Federico" />
           </label>
         </div>
         <div class="form_input-cotainer">
           <label
-            >Apellido
-            <input type="text" placeholder="Bustos" />
+            >Telefono
+            <input id="txtTelefono" type="text" placeholder="2664057788" />
           </label>
         </div>
         <div class="form_input-cotainer">
           <label
             >Mail
-            <input type="text" placeholder="fede@gmail.com" />
+            <input id="txtCorreo" type="text" placeholder="fede@gmail.com" />
           </label>
         </div>
         <div class="form_input-cotainer">
           <label
             >Mensaje
-            <textarea placeholder="Deja aquí tu mensaje..."></textarea>
+            <textarea
+              id="txtConsulta"
+              placeholder="Deja aquí tu mensaje..."
+            ></textarea>
           </label>
         </div>
         <div class="form_input-cotainer">
           <label>
             <input type="submit" />
+            <button type="reset">Borrar Campos</button>
           </label>
         </div>
       </form>
+      <div class="bajo_form">
+        <div class="centrar-boton">
+          <ul id="ltaErrores"></ul>
+          <!--Lista de herrores-->
+          <ul id="ltaMensajes"></ul>
+          <!--Lista de mensajes-->
+          <ul id="ltaErrores"></ul>
+          <!--Lista de herrores-->
+          <ul id="ltaMensajes"></ul>
+          <!--Lista de mensajes-->
+        </div>
+      </div>
+      <script defer src="javaformulario.js"></script>
     </section>
   </body>
 </html>
